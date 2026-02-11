@@ -732,9 +732,30 @@ For three long months she phoned the bus station, hoping someone would call to s
           </div>
         </div>
       </div>
+      <!-- Bootstrap CSS (5.x) -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-..."
+  crossorigin="anonymous"
+/>
+
+<!-- Cookie Notice -->
+<div id="cookieNotice" class="alert alert-info fixed-bottom mb-0 text-center" role="alert" style="display: none;">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <span>
+      We do not use cookies on this site, but we like to be transparent with our visitors.
+    </span>
+    <button id="cookieDismiss" type="button" class="btn btn-sm btn-primary mt-2 mt-md-0">
+      Got it
+    </button>
+  </div>
+</div>
+
+
     </footer>
     <hr>
-  
+    
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -761,5 +782,28 @@ For three long months she phoned the bus station, hoping someone would call to s
         "inLanguage": "en-GB"
        }
       </script>
+      <!-- Optional: Script to show once per session -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const notice = document.getElementById("cookieNotice");
+    const dismissed = sessionStorage.getItem("cookieNoticeDismissed");
+
+    if (!dismissed) {
+      notice.style.display = "block";
+    }
+
+    document.getElementById("cookieDismiss").addEventListener("click", function () {
+      notice.style.display = "none";
+      sessionStorage.setItem("cookieNoticeDismissed", "true");
+    });
+  });
+</script>
+
+<!-- Bootstrap JS (Bundle includes Popper) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-..."
+  crossorigin="anonymous"
+></script>
   </body>
 </html>
