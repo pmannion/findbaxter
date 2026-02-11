@@ -66,7 +66,7 @@
       }
   
       $('#countdown-clock').each(function(){
-        const deadline = new Date(Date.parse(new Date()) + 28 * 24 * 60 * 60 * 1000);
+        const deadline = new Date(Date.UTC(2026, 1, 14, 13, 0, 0));
         initializeClock('countdown-clock', deadline);
       });
     }
