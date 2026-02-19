@@ -28,8 +28,6 @@
       })
     }
 
-
-
     var initProductQty = function(){
 
       $('.product-qty').each(function(){
@@ -59,7 +57,6 @@
 
       searchPopup();
       initProductQty();
-      countdownTimer();
 
       /* Video */
       var $videoSrc;  
@@ -132,6 +129,5 @@
       const preloader = document.getElementById("preloader");
       preloader.classList.add("hide-preloader");
     });
-
 
 })(jQuery);
